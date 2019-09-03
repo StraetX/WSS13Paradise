@@ -26,7 +26,7 @@ Bonus
 
 /datum/symptom/damage_converter/Activate(datum/disease/advance/A)
 	..()
-	if(prob(SYMPTOM_ACTIVATION_PROB * 10))
+	if(prob(SYMPTOM_ACTIVATION_PROB * 8))
 		var/mob/living/M = A.affected_mob
 		switch(A.stage)
 			if(4, 5)
