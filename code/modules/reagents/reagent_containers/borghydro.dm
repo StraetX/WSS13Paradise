@@ -19,7 +19,7 @@
 	//var/list/reagent_ids = list("salbutamol", "silver_sulfadiazine", "styptic_powder", "charcoal", "epinephrine", "spaceacillin", "hydrocodone")
 
 /obj/item/reagent_containers/borghypo/surgeon
-	reagent_ids = list("styptic_powder", "epinephrine", "salbutamol")
+	reagent_ids = list("epinephrine", "salbutamol")
 
 /obj/item/reagent_containers/borghypo/crisis
 	reagent_ids = list("salglu_solution", "epinephrine", "sal_acid")

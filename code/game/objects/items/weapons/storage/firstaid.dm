@@ -38,10 +38,6 @@
 
 		icon_state = pick("ointment","firefirstaid")
 
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
 		new /obj/item/healthanalyzer( src )
 		new /obj/item/reagent_containers/hypospray/autoinjector( src )
 		new /obj/item/reagent_containers/food/pill/salicylic( src )
@@ -57,11 +53,7 @@
 	New()
 		..()
 		if(empty) return
-		new /obj/item/reagent_containers/food/pill/patch/styptic( src )
-		new /obj/item/reagent_containers/food/pill/patch/styptic( src )
 		new /obj/item/reagent_containers/food/pill/salicylic( src )
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
-		new /obj/item/reagent_containers/food/pill/patch/silver_sulf( src )
 		new /obj/item/healthanalyzer( src )
 		new /obj/item/reagent_containers/hypospray/autoinjector( src )
 		return
@@ -123,11 +115,6 @@
 		if(empty) return
 
 		icon_state = pick("brute","brute2")
-
-		new /obj/item/reagent_containers/food/pill/patch/styptic(src)
-		new /obj/item/reagent_containers/food/pill/patch/styptic(src)
-		new /obj/item/reagent_containers/food/pill/patch/styptic(src)
-		new /obj/item/reagent_containers/food/pill/patch/styptic(src)
 		new /obj/item/healthanalyzer(src)
 		new /obj/item/reagent_containers/hypospray/autoinjector(src)
 		new /obj/item/stack/medical/bruise_pack(src)
@@ -198,8 +185,6 @@
 	if(empty) return
 	new /obj/item/reagent_containers/hypospray/combat(src)
 	new /obj/item/reagent_containers/food/pill/patch/synthflesh(src) // Because you ain't got no time to look at what damage dey taking yo
-	new /obj/item/reagent_containers/food/pill/patch/synthflesh(src)
-	new /obj/item/reagent_containers/food/pill/patch/synthflesh(src)
 	new /obj/item/reagent_containers/food/pill/patch/synthflesh(src)
 	new /obj/item/defibrillator/compact/combat/loaded(src)
 	new /obj/item/clothing/glasses/hud/health/night(src)
