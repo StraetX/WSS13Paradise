@@ -18,21 +18,21 @@
 	desc = "Helps with brute injuries."
 	icon_state = "bandaid_brute"
 	instant_application = 1
-	list_reagents = list("styptic_powder" = 40)
+	list_reagents = list("styptic_powder" = 0)
 
 /obj/item/reagent_containers/food/pill/patch/silver_sulf
 	name = "burn patch"
 	desc = "Helps with burn injuries."
 	icon_state = "bandaid_burn"
 	instant_application = 1
-	list_reagents = list("silver_sulfadiazine" = 40)
+	list_reagents = list("silver_sulfadiazine" = 0)
 
 /obj/item/reagent_containers/food/pill/patch/synthflesh
 	name = "syntheflesh patch"
 	desc = "Helps with burn injuries."
 	icon_state = "bandaid_med"
 	instant_application = 1
-	list_reagents = list("synthflesh" = 20)
+	list_reagents = list("synthflesh" = 0)
 
 /obj/item/reagent_containers/food/pill/patch/nicotine
 	name = "nicotine patch"
