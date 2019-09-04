@@ -436,7 +436,7 @@
 //					config.enable_authentication = 1
 
 				if("norespawn")
-					config.respawn = 0
+					config.respawn = 1
 
 				if("servername")
 					config.server_name = value
