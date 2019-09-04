@@ -8,7 +8,7 @@
 #SERVER_EXTRA_FEATURES medium RP, varied species/jobs/modes
 
 ## Add a # infront of this if you want to use the SQL based admin system, the legacy system uses admins.txt. You need to set up your database to use the SQL based system.
-ADMIN_LEGACY_SYSTEM
+#ADMIN_LEGACY_SYSTEM
 
 ## Add a # infront of this if you want to use the SQL based banning system. The legacy systems use the files in the data folder. You need to set up your database to use the SQL based system.
 BAN_LEGACY_SYSTEM
@@ -86,16 +86,16 @@ LOG_WORLD_OUTPUT
 LOG_ADMINWARN
 
 ## Amount of minutes that a person has to be AFK before he'll be listed on the "List AFK players" verb
-#LIST_AFK_MINIMUM 5
+LIST_AFK_MINIMUM 5
 
 ## Amount of minutes that a person has to be AFK before he will be warned by the AFK subsystem. Leave this 0 to prevent the subsystem from activating
-#WARN_AFK_MINIMUM 0
+WARN_AFK_MINIMUM 10
 
 ## Amount of minutes that a person has to be AFK before he will be cryod by the AFK subsystem. Leave this 0 to prevent the subsystem from activating
-#AUTO_CRYO_AFK 0
+AUTO_CRYO_AFK 5
 
 ## Amount of minutes that a person has to be AFK before he will be despawned by the AFK subsystem. Leave this 0 to prevent the subsystem from activating
-#AUTO_DESPAWN_AFK 0
+AUTO_DESPAWN_AFK 25
 
 ## probablities for game modes chosen in "secret" and "random" modes
 ##
@@ -152,7 +152,7 @@ PREGAME_TIMESTART 120
 VOTE_DELAY 18000
 
 ## time period (deciseconds) which voting session will last (default 1 minute)
-VOTE_PERIOD 60
+VOTE_PERIOD 600
 
 ## autovote initial delay (deciseconds) before first automatic transfer vote call (default 180 minutes)
 VOTE_AUTOTRANSFER_INITIAL 72000
@@ -176,13 +176,13 @@ ALLOW_ANTAG_HUD
 ANTAG_HUD_RESTRICTED
 
 ## disable abandon mob
-NORESPAWN
+#NORESPAWN
 
 ## Uncomment to disable respawning by default.
-DISABLE_RESPAWN
+#DISABLE_RESPAWN
 
 ## Respawn delay in minutes before one may respawn as a crew member.
-#RESPAWN_DELAY 15
+RESPAWN_DELAY 15
 
 ## disables calling qdel(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB
@@ -232,7 +232,7 @@ CHECK_RANDOMIZER
 # FORUMURL http://example.org
 
 ## Wiki address
-# WIKIURL http://example.org
+# WIKIURL https://nanotrasen.se/wiki/index.php/Main_Page
 
 ## Rules address
 # RULESURL http://example.org
@@ -241,7 +241,7 @@ CHECK_RANDOMIZER
 # GITHUBURL http://example.org
 
 ## Discord address
-# DISCORDURL http://example.org
+# DISCORDURL https://discord.gg/SS8Spaj
 
 ## Donations address
 # DONATIONSURL http://example.org
