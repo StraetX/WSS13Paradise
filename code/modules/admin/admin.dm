@@ -702,7 +702,7 @@ var/global/nologevent = 0
 		return 1
 	else
 		to_chat(usr, "<font color='red'>Error: Start Now: Game has already started.</font>")
-		return 
+		return
 
 /datum/admins/proc/toggleenter()
 	set category = "Server"
