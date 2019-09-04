@@ -2,13 +2,13 @@ SUBSYSTEM_DEF(nightshift)
 	name = "Night Shift"
 	init_order = INIT_ORDER_NIGHTSHIFT
 	priority = FIRE_PRIORITY_NIGHTSHIFT
-	wait = 600
+	wait = 60
 	flags = SS_NO_TICK_CHECK
 
 	var/nightshift_active = FALSE
 	var/nightshift_start_time = 270000		//7:30 PM, station time
 	var/nightshift_end_time = 270000		//7:30 AM, station time
-	var/nightshift_first_check = 30 SECONDS
+	var/nightshift_first_check = 5 SECONDS
 
 	var/high_security_mode = FALSE
 

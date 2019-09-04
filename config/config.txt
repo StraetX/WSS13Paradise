@@ -167,7 +167,7 @@ NO_DEAD_VOTE
 DEFAULT_NO_VOTE
 
 ## allow AI job
-ALLOW_AI
+ALLOW_AI 
 
 ## Allow ghosts to see antagonist through AntagHUD
 ALLOW_ANTAG_HUD
@@ -270,7 +270,7 @@ CHECK_RANDOMIZER
 ALLOW_HOLIDAYS
 
 ##Defines the ticklag for the world.  0.9 is the normal one, 0.5 is smoother.
-TICKLAG 0.4
+TICKLAG 0.5
 
 ## Whether the server will talk to other processes through socket_talk
 SOCKET_TALK 0
