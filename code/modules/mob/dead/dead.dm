@@ -31,27 +31,3 @@
 			registered_z = new_z
 		else
 			registered_z = null
-
-/mob/dead/verb/respawn()
-	set name = "Respawn"
-	set category = "OOC"
-
-	if (!(config.abandon_allowed))
-		to_chat(usr, SPAN_WARNING("Respawn is disabled."))
-		return
-	if (!SSticker.mode)
-		to_chat(usr, SPAN_WARNING("<b>You may not attempt to respawn yet.</b>"))
-		return
-	if (SSticker.mode.deny_respawn)
-		to_chat(usr, SPAN_WARNING("Respawn is disabled for this roundtype."))
-		return
-	if(!MayRespawn(1, started_as_observer ? OBSERV_SPAWN_DELAY : config.respawn_delay))
-		return
-
-	to_chat(usr, SPAN_NOTICE("You can respawn now, enjoy your new life!"))
-	to_chat(usr, SPAN_NOTICE("<b>Make sure to play a different character, and please roleplay correctly!</b>"))
-	announce_ghost_joinleave(client, 0)
-
-	var/mob/new_player/M = new /mob/new_player()
-	M.key = key
-	log_and_message_admins("has respawned.", M)

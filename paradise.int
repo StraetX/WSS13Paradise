@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1567613067
-DIR: _maps\map_files _maps\map_files\debug code code\_globalvars code\controllers code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game code\modules code\modules\admin code\modules\admin\verbs code\modules\buildmode\submodes code\modules\examine\descriptions code\modules\mob code\modules\mob\dead 
+LAST_COMPILE_TIME: 1567488195
+DIR: _maps\map_files\debug code code\defines\procs code\game code\game\gamemodes\miniantags code\game\machinery\telecomms code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage code\modules code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\human code\modules\pda code\modules\projectiles code\modules\projectiles\guns code\modules\reagents code\modules\reagents\chemistry code\modules\reagents\chemistry\machinery code\modules\reagents\chemistry\reagents code\modules\reagents\chemistry\recipes code\modules\reagents\reagent_containers code\modules\research sound sound\vox_fem 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 512.1479
-WINDOW: code\modules\admin\verbs\atmosdebug.dm;code\modules\alarm\atmosphere_alarm.dm;code\modules\atmos_automation\statements.dm;code\modules\buildmode\submodes\atmos.dm;code\modules\examine\descriptions\atmospherics.dm;code\__DEFINES\atmospherics.dm;code\_globalvars\configuration.dm;code\modules\mob\mob.dm;code\game\world.dm;code\modules\admin\admin.dm;code\modules\mob\dead\dead.dm;code\controllers\configuration.dm
-FILE: code\controllers\configuration.dm
+WINDOW: code\game\machinery\telecomms\ntsl2.dm;code\__HELPERS\files.dm;code\controllers\configuration.dm;code\game\atoms_movable.dm;code\modules\pda\messenger_plugins.dm;code\modules\mob\mob_helpers.dm;code\modules\research\message_server.dm;code\__DEFINES\atmospherics.dm;code\datums\diseases\advance\symptoms\damage_converter.dm;code\modules\mob\living\damage_procs.dm;code\modules\mob\living\carbon\human\life.dm;code\modules\reagents\reagent_containers\patch.dm;code\modules\reagents\chemistry\machinery\chem_master.dm;code\modules\reagents\reagent_containers\borghydro.dm;code\modules\reagents\chemistry\recipes\medicine.dm;code\modules\reagents\chemistry\reagents\medicine.dm;code\game\objects\items\weapons\storage\firstaid.dm
+FILE: code\modules\reagents\chemistry\reagents\medicine.dm
 */
 // END_INTERNALS

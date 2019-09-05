@@ -389,6 +389,9 @@ var/world_topic_spam_protect_time = world.timeofday
 	if(config && config.wikiurl)
 		features += "<a href=\"[config.wikiurl]\">Wiki</a>"
 
+	if(abandon_allowed)
+		features += "respawn"
+
 	if(features)
 		s += "[jointext(features, ", ")]"
 
