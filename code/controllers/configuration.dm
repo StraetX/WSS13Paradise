@@ -439,6 +439,10 @@
 				if("norespawn")
 					config.respawn = 1
 
+				if ("respawn_delay")
+					config.respawn_delay = text2num(value)
+					config.respawn_delay = config.respawn_delay > 0 ? config.respawn_delay : 0
+
 				if("servername")
 					config.server_name = value
 

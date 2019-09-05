@@ -1115,3 +1115,16 @@ var/gamma_ship_location = 1 // 0 = station , 1 = space
 	dat += "</table></body></html>"
 
 	usr << browse(dat, "window=duplicates;size=500x480")
+
+	/datum/admins/proc/show_game_mode()
+	set category = "Admin"
+	set desc = "Show the current round configuration."
+	set name = "Show Game Mode"
+
+	if(SSticker.mode.deny_respawn)
+		out += "<b>Respawning:</b> <a href='?src=\ref[SSticker.mode];toggle=respawn'>disallowed</a>"
+	else
+		out += "<b>Respawning:</b> <a href='?src=\ref[SSticker.mode];toggle=respawn'>allowed</a>"
+	out += "<br/>"
+
+	out += "<b>Shuttle delay multiplier:</b> <a href='?src=\ref[SSticker.mode];set=shuttle_delay'>[SSticker.mode.shuttle_delay]</a><br/>"
