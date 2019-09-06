@@ -176,7 +176,7 @@ ALLOW_ANTAG_HUD
 ANTAG_HUD_RESTRICTED
 
 ## disable abandon mob
-NORESPAWN
+#NORESPAWN
 
 ## Uncomment to disable respawning by default.
 #DISABLE_RESPAWN
