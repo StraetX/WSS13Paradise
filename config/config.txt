@@ -11,7 +11,7 @@
 #ADMIN_LEGACY_SYSTEM
 
 ## Add a # infront of this if you want to use the SQL based banning system. The legacy systems use the files in the data folder. You need to set up your database to use the SQL based system.
-BAN_LEGACY_SYSTEM
+#BAN_LEGACY_SYSTEM
 
 ## Add a # infront of this to unlimit the builds used to play. Advised is to keep it atleast 1421 due to the middle mouse button locking exploit
 MINIMUM_CLIENT_BUILD 1421
@@ -101,23 +101,23 @@ AUTO_DESPAWN_AFK 25
 ##
 ## default probablity is 1, increase to make that mode more likely to be picked
 ## set to 0 to disable that mode
-PROBABILITY EXTEND-A-TRAITORMONGOUS 3
-PROBABILITY TRAITORCHAN 3
-PROBABILITY TRAITORVAMP 3
-PROBABILITY REVOLUTION 3
-PROBABILITY SHADOWLING 2
-PROBABILITY CULT 4
-PROBABILITY CHANGELING 3
+PROBABILITY EXTEND-A-TRAITORMONGOUS 2
+PROBABILITY TRAITORCHAN 2
+PROBABILITY TRAITORVAMP 2
+PROBABILITY REVOLUTION 2
+PROBABILITY SHADOWLING 1
+PROBABILITY CULT 2
+PROBABILITY CHANGELING 2
 PROBABILITY WIZARD 2
 PROBABILITY BLOB 1
 PROBABILITY RAGINMAGES 1
 PROBABILITY METEOR 0
 PROBABILITY HEIST 1
-PROBABILITY VAMPIRE 3
+PROBABILITY VAMPIRE 2
 PROBABILITY NATIONS 1
 PROBABILITY EXTENDED 0
-PROBABILITY NUCLEAR 3
-PROBABILITY ABDUCTION 1
+PROBABILITY NUCLEAR 5
+PROBABILITY ABDUCTION 4
 PROBABILITY DEVIL 1
 PROBABILITY DEVILAGENTS 1
 
@@ -232,7 +232,7 @@ CHECK_RANDOMIZER
 # FORUMURL http://example.org
 
 ## Wiki address
-# WIKIURL https://nanotrasen.se/wiki/index.php/Main_Page
+WIKIURL https://nanotrasen.se/wiki/index.php/Main_Page
 
 ## Rules address
 # RULESURL http://example.org
@@ -241,7 +241,7 @@ CHECK_RANDOMIZER
 # GITHUBURL http://example.org
 
 ## Discord address
-# DISCORDURL https://discord.gg/SS8Spaj
+DISCORDURL https://discord.gg/SS8Spaj
 
 ## Donations address
 # DONATIONSURL http://example.org
