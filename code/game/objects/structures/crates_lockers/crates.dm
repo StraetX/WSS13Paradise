@@ -79,30 +79,6 @@
 	return TRUE
 
 /obj/structure/closet/crate/attackby(obj/item/W, mob/user, params)
-	var/target = src
-	if(istype(W, /obj/item/screwdriver) && locked && hack_step == 0)
-		to_chat(user, "<span class='notice'>Вы откручиваете шурупы на панели [src.name].</span>")
-		if(do_after(user, 80, target = target) && target)
-			to_chat(user, "<span class='notice'>Вы открутили шурупы на панели [src.name].</span>")
-			hack_step = 1
-	if(istype(W, /obj/item/crowbar) && locked && hack_step == 1)
-		to_chat(user, "<span class='notice'>Вы снимаете защитную панель [src.name].</span>")
-		if(do_after(user, 40, target = target) && target)
-			to_chat(user, "<span class='notice'>Вы убрали защитную панель [src.name].</span>")
-			hack_step = 2
-	if(istype(W, /obj/item/wirecutters) && locked && hack_step == 2)
-		to_chat(user, "<span class='notice'>Вы перекусываете и зачищаете провода панели [src.name].</span>")
-		if(do_after(user, 160, target = target) && target)
-			to_chat(user, "<span class='notice'>Вы оголили провода панели [src.name].</span>")
-			hack_step = 3
-	if(istype(W, /obj/item/multitool) && locked && hack_step == 3)
-		to_chat(user, "<span class='notice'>Вы подключаете провода [src.name] к [W.name].</span>")
-		if(do_after(user, 160, target = target) && target)
-			to_chat(user, "<span class='notice'>[W.name] активировал безопасный режим [src.name].</span>")
-			hack_step = 4
-			locked = 0
-			update_icon()
-	return ..()
 	if(istype(W, /obj/item/rcs) && !src.opened)
 		var/obj/item/rcs/E = W
 		if(E.rcell && (E.rcell.charge >= E.chargecost))
@@ -324,6 +300,29 @@
 
 
 /obj/structure/closet/crate/secure/attackby(obj/item/W, mob/user, params)
+	var/target = src
+	if(istype(W, /obj/item/screwdriver) && locked && hack_step == 0)
+		to_chat(user, "<span class='notice'>Вы откручиваете шурупы на панели [src.name].</span>")
+		if(do_after(user, 80, target = target) && target)
+			to_chat(user, "<span class='notice'>Вы открутили шурупы на панели [src.name].</span>")
+			hack_step = 1
+	if(istype(W, /obj/item/crowbar) && locked && hack_step == 1)
+		to_chat(user, "<span class='notice'>Вы снимаете защитную панель [src.name].</span>")
+		if(do_after(user, 40, target = target) && target)
+			to_chat(user, "<span class='notice'>Вы убрали защитную панель [src.name].</span>")
+			hack_step = 2
+	if(istype(W, /obj/item/wirecutters) && locked && hack_step == 2)
+		to_chat(user, "<span class='notice'>Вы перекусываете и зачищаете провода панели [src.name].</span>")
+		if(do_after(user, 160, target = target) && target)
+			to_chat(user, "<span class='notice'>Вы оголили провода панели [src.name].</span>")
+			hack_step = 3
+	if(istype(W, /obj/item/multitool) && locked && hack_step == 3)
+		to_chat(user, "<span class='notice'>Вы подключаете провода [src.name] к [W.name].</span>")
+		if(do_after(user, 160, target = target) && target)
+			to_chat(user, "<span class='notice'>[W.name] активировал безопасный режим [src.name].</span>")
+			hack_step = 4
+			locked = 0
+			update_icon()
 	if(is_type_in_list(W, list(/obj/item/stack/packageWrap, /obj/item/stack/cable_coil, /obj/item/radio/electropack, /obj/item/wirecutters,/obj/item/rcs)))
 		return ..()
 	if((istype(W, /obj/item/card/emag) || istype(W, /obj/item/melee/energy/blade)))
