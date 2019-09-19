@@ -12,7 +12,7 @@
 	//Intentionally empty
 
 /datum/objective/devil/soulquantity/update_explanation_text()
-	explanation_text = " упите и сохран€йте как минимум [target_amount] душ."
+	explanation_text = " упите и сохраняйте как минимум [target_amount] душ."
 
 /datum/objective/devil/soulquantity/check_completion()
 	var/count = 0
@@ -81,9 +81,9 @@
 
 /datum/objective/devil/buy_target/update_explanation_text()
 	if(target)
-		explanation_text = " упите и сохран€йте [target.name], [target.assigned_role]."
+		explanation_text = " упите и сохраняйте [target.name], [target.assigned_role]."
 	else
-		explanation_text = "—вободна€ задача."
+		explanation_text = "—вободная задача."
 
 /datum/objective/devil/buy_target/check_completion()
 	return target.soulOwner == owner

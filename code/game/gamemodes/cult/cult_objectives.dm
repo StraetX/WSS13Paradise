@@ -19,10 +19,10 @@
 
 	switch(new_objective)
 		if("convert")
-			explanation = "Мы должны увеличить наше влияние, прежде чем мы сможем вызвать [SSticker.cultdat.entity_name], Обратите [convert_target] членов экипажа. Делайте это тихо, чтобы не вызывать подозрений."
+			explanation = "Мы должны увеличить наше влиЯние, прежде чем мы сможем вызвать [SSticker.cultdat.entity_name], Обратите [convert_target] членов экипажа. Делайте это тихо, чтобы не вызывать подозрений."
 		if("bloodspill")
 			spilltarget = 100 + rand(0,GLOB.player_list.len * 3)
-			explanation = "Мы должны подготовить это место для [SSticker.cultdat.entity_title1] уже рядом. Пролить кровь [spilltarget] на пол."
+			explanation = "Мы должны подготовить это место длЯ [SSticker.cultdat.entity_title1] уже рЯдом. Пролить кровь [spilltarget] на пол."
 		if("sacrifice")
 			explanation = "We need to sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role], for [sacrifice_target.p_their()] blood is the key that will lead our master to this realm. You will need 3 cultists around a Sacrifice rune to perform the ritual."
 
@@ -76,10 +76,10 @@
 
 		switch(new_objective)
 			if("convert")
-				explanation = "Мы должны увеличить наше влияние, прежде чем мы сможем вызвать [SSticker.cultdat.entity_name]. Обратите [convert_target] членов экипажа. Делайте это тихо, чтобы не вызывать подозрений."
+				explanation = "Мы должны увеличить наше влиЯние, прежде чем мы сможем вызвать [SSticker.cultdat.entity_name]. Обратите [convert_target] членов экипажа. Делайте это тихо, чтобы не вызывать подозрений."
 			if("bloodspill")
 				spilltarget = 100 + rand(0,GLOB.player_list.len * 3)
-				explanation = "Мы должны подготовить это место для [SSticker.cultdat.entity_title1] уже рядом. Spread blood and gibs over [spilltarget] of the Station's floor tiles."
+				explanation = "Мы должны подготовить это место длЯ [SSticker.cultdat.entity_title1] уже рЯдом. Spread blood and gibs over [spilltarget] of the Station's floor tiles."
 			if("sacrifice")
 				explanation = "We need to sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role], for [sacrifice_target.p_their()] blood is the key that will lead our master to this realm. You will need 3 cultists around a Sacrifice rune to perform the ritual."
 
@@ -97,7 +97,7 @@
 /datum/game_mode/cult/proc/gtfo_phase()//YOU HAD ONE JOB
 	var/explanation
 	objectives += "survive"
-	explanation = "Наши знания должны жить. Убедитесь, что хотя бы [acolytes_needed] культисты сбегут на шаттле, чтобы распространить свою работу на другой станции."
+	explanation = "Наши знаниЯ должны жить. Убедитесь, что хотЯ бы [acolytes_needed] культисты сбегут на шаттле, чтобы распространить свою работу на другой станции."
 	for(var/datum/mind/cult_mind in cult)
 		if(cult_mind)
 			to_chat(cult_mind.current, "<span class='cult'>Вы и ваши помощники вдруг почувствуете желание сделать все возможное, но выжить!</span>")
@@ -111,10 +111,10 @@
 
 	if(prob(40))//split the chance of this
 		objectives += "eldergod"
-		explanation = "Призвать [SSticker.cultdat.entity_name] на Станции с помощью руны Tear Reality. Вуаль достаточно слаба в [english_list(summon_spots)] для начала ритуала."
+		explanation = "Призвать [SSticker.cultdat.entity_name] на Станции с помощью руны Tear Reality. Вуаль достаточно слаба в [english_list(summon_spots)] длЯ начала ритуала."
 	else
 		objectives += "slaughter"
-		explanation = "Принесите убой через руну 'Bring forth the slaughter'. Вуаль слишком слаба что бы [english_list(summon_spots)] ритуал начался."
+		explanation = "Принесите убой через руну 'Bring forth the slaughter'. Вуаль слишком слаба что бы [english_list(summon_spots)] ритуал началсЯ."
 
 	for(var/datum/mind/cult_mind in cult)
 		if(cult_mind)
@@ -135,11 +135,11 @@
 
 	switch(last_objective)
 		if("harvest")
-			explanation = "[SSticker.cultdat.entity_title1] жаждет своей первой еды этого бесконечного дня. Предложить ему [harvest_target] людей в жертву."
+			explanation = "[SSticker.cultdat.entity_title1] жаждет своей первой еды этого бесконечного днЯ. Предложить ему [harvest_target] людей в жертву."
 		if("hijack")
-			explanation = "[SSticker.cultdat.entity_name] желает, чтобы их войска немедленно начали штурм Centcom. Захватите спасательный шаттл и не позволяйте ни одному некультисту садиться на него!"
+			explanation = "[SSticker.cultdat.entity_name] желает, чтобы их войска немедленно начали штурм Centcom. Захватите спасательный шаттл и не позволЯйте ни одному некультисту садитьсЯ на него!"
 		if("massacre")
-			explanation = "[SSticker.cultdat.entity_name] хочет наблюдать за тобой, пока ты убиваешь оставшихся людей на станции (Сейчас [massacre_target] людей осталось в живых!)."
+			explanation = "[SSticker.cultdat.entity_name] хочет наблюдать за тобой, пока ты убиваешь оставшихсЯ людей на станции (Сейчас [massacre_target] людей осталось в живых!)."
 
 	for(var/datum/mind/cult_mind in cult)
 		if(cult_mind)

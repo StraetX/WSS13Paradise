@@ -1,5 +1,5 @@
-<h1>Добро пожаловать в Space Station 13!</h1>
+<h1>Welcome to Space Station 13!</h1>
 
--<i>Вики - <a href="http://nanotrasen.se/"</i>
+-<i>Wiki: http://nanotrasen.se
 <br><br>
-<strong>Наш Discord: https://discord.gg/56Pfgmx</a>
+<strong>Discord: https://discord.gg/56Pfgmx</a>

@@ -62,7 +62,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	if(target && target.current)
 		explanation_text = "Убить [target.current.real_name], [target.assigned_role]."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 
 /datum/objective/assassinate/check_completion()
 	if(target && target.current)
@@ -84,7 +84,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	if(target && target.current)
 		explanation_text = "Убить [target.current.real_name], [target.assigned_role]."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 /datum/objective/mutiny/check_completion()
@@ -105,7 +105,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	if(target && target.current)
 		explanation_text = "Не дать [target.current.real_name], [target.assigned_role] сбежать живым!"
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 /datum/objective/maroon/check_completion()
@@ -133,7 +133,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	if(target && target.current)
 		explanation_text = "Украсть мозг [target.current.real_name] [target.assigned_role]."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 
@@ -160,7 +160,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	if(target && target.current)
 		explanation_text = "Защищать [target.current.real_name], [target.assigned_role]."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 /datum/objective/protect/check_completion()
@@ -181,7 +181,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 
 /datum/objective/hijack
 	martyr_compatible = 0 //Technically you won't get both anyway.
-	explanation_text = "Захватите шаттл, спасаясь от него без экипажа лоялистов Nanotrasen на борту! \
+	explanation_text = "Захватите шаттл, не дайте персоналу Nanotrasen оказаться на борту! \
 Агенты-синдикаты, другие враги Нанотрасена, киборги, домашние животные / могут быть допущены на шаттл живыми."
 
 /datum/objective/hijack/check_completion()
@@ -230,7 +230,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	return 0
 
 /datum/objective/block
-	explanation_text = "Не позволяйте никаким жизненным формам, будь то органические или синтетические, спасаться на шаттле живыми. AI, киборги и pAI не считаются живыми."
+	explanation_text = "Не позволЯйте никаким жизненным формам, будь то органические или синтетические, спасатьсЯ на шаттле живыми. AI, киборги и pAI не считаютсЯ живыми."
 	martyr_compatible = 1
 
 /datum/objective/block/check_completion()
@@ -297,9 +297,9 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 		target = pick(possible_targets)
 	if(target && target.current)
 		target_real_name = target.current.real_name
-		explanation_text = "Сбежать на шатле, или поде с личностью [target_real_name], [target.assigned_role] во время ношения [target.p_their()] индификационной карты."
+		explanation_text = "Сбежать на шатле, или поде с личностью [target_real_name], [target.assigned_role] во времЯ ношениЯ [target.p_their()] индификационной карты."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 
 /datum/objective/escape/escape_with_identity/check_completion()
 	if(!target_real_name)
@@ -326,7 +326,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 
 
 /datum/objective/survive
-	explanation_text = "Остаться живым до конца!"
+	explanation_text = "ОстатьсЯ живым до конца!"
 
 /datum/objective/survive/check_completion()
 	if(!owner.current || owner.current.stat == DEAD || isbrain(owner.current))
@@ -336,7 +336,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 	return 1
 
 /datum/objective/nuclear
-	explanation_text = "Уничтожить станцию с помощью, ядерного устройства."
+	explanation_text = "Уничтожить станцию с помощью, Ядерного устройства."
 	martyr_compatible = 1
 
 /datum/objective/steal
@@ -372,7 +372,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 		if(islist(O.protected_jobs) && O.protected_jobs.len)
 			explanation_text += "It may also be in the possession of the [jointext(O.protected_jobs, ", ")]."
 		return
-	explanation_text = "Свободная задача."
+	explanation_text = "СвободнаЯ задача."
 
 
 /datum/objective/steal/proc/select_target()
@@ -475,7 +475,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 					n_p++
 		target_amount = min(target_amount, n_p)
 
-	explanation_text = "Высосать [target_amount] подходящих геномов."
+	explanation_text = "Высосать [target_amount] подходЯщих геномов."
 	return target_amount
 
 /datum/objective/absorb/check_completion()
@@ -496,7 +496,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 		target_real_name = target.current.real_name
 		explanation_text = "Уничтожить [target_real_name], ИИ."
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 /datum/objective/destroy/check_completion()
@@ -552,9 +552,9 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 		target = pick(possible_targets)
 
 	if(target && target.current)
-		explanation_text = "Мелководье нуждается в [target.current.real_name], [target.assigned_role]. Возьмите [target.current.p_them()] живым!"
+		explanation_text = "Мелководье нуждаетсЯ в [target.current.real_name], [target.assigned_role]. Возьмите [target.current.p_them()] живым!"
 	else
-		explanation_text = "Свободная задача"
+		explanation_text = "СвободнаЯ задача"
 	return target
 
 /datum/objective/heist/kidnap/check_completion()
@@ -673,7 +673,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 			target = "diamond"
 			target_amount = 20
 
-	explanation_text = "Разорять или торговать со станцией, сбежать с [target_amount] [target]."
+	explanation_text = "РазорЯть или торговать со станцией, сбежать с [target_amount] [target]."
 
 /datum/objective/heist/salvage/check_completion()
 	var/total_amount = 0
@@ -718,7 +718,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 
 
 /datum/objective/heist/inviolate_crew
-	explanation_text = "Выполнить задачу, не потеряв никого из Vox"
+	explanation_text = "Выполнить задачу, не потерЯв никого из Vox"
 
 /datum/objective/heist/inviolate_crew/check_completion()
 	var/datum/game_mode/heist/H = SSticker.mode
@@ -756,5 +756,5 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 //wizard
 
 /datum/objective/wizchaos
-	explanation_text = "Нанеси как можно больший ущерб станции! Отправь этим мразям из Нанотрасен сообщение!"
+	explanation_text = "Нанеси как можно больший ущерб станции! Отправь этим мразЯм из Нанотрасен сообщение!"
 	completed = 1
