@@ -611,7 +611,7 @@ var/list/potential_theft_objectives = subtypesof(/datum/theft_objective) - /datu
 			target_amount = 1
 			loot = "an ion gun"
 
-	explanation_text = "Нам нехватает оборудования, украсть или выторговать [loot]."
+	explanation_text = "We are lacking in hardware. Steal or trade [loot]."
 
 /datum/objective/heist/loot/check_completion()
 	var/total_amount = 0

@@ -24,7 +24,7 @@
 			spilltarget = 100 + rand(0,GLOB.player_list.len * 3)
 			explanation = "Мы должны подготовить это место для [SSticker.cultdat.entity_title1] уже рядом. Пролить кровь [spilltarget] на пол."
 		if("sacrifice")
-			explanation = "Нам нужно пожертвовать [sacrifice_target.name], [sacrifice_target.assigned_role], для [sacrifice_target.p_their()] кровь - это ключ, который приведет нашего хозяина в это царство. Вам понадобится 3 культиста вокруг руны Жертвоприношения, чтобы выполнить ритуал."
+			explanation = "We need to sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role], for [sacrifice_target.p_their()] blood is the key that will lead our master to this realm. You will need 3 cultists around a Sacrifice rune to perform the ritual."
 
 	for(var/datum/mind/cult_mind in cult)
 		to_chat(cult_mind.current, "<B>Objective #[current_objective]</B>: [explanation]")
